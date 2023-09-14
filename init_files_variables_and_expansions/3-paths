@@ -1,2 +1,2 @@
 #!/bin/bash
-eco $PATH | tr ":" | "ln" | wc -l
+eco $PATH | tr ":" "\n" | wc -l
