@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # testing until loops to list Best School 10 times
 x=1
-until [ $x == 10 ]:
+until [ $x == 10 ]
 do
-	echo "Best School"
+	echo "Best School";
 	x=$((x+1))
 done
