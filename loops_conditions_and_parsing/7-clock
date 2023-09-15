@@ -9,7 +9,7 @@ do
 		echo "Hour: $h"
 	elif [ $m == 59 ]
 	then 
-		h=$(($h+1))
+		h=$((h+1))
 		m=0
 		if [ $h == 13 ]
 		then
