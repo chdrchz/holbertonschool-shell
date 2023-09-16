@@ -2,9 +2,7 @@
 #if statement for listing file information
 if test -f 'school.txt' ; then
 	echo 'school file exists'
-		if (exit 0); then
-			echo 'school is a regular file'
-		elif !(exit 0); then
+		if file -d 'school.txt' ; then
 			break
 		fi
 			if test -z 'school.txt' ; then
