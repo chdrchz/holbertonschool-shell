@@ -10,6 +10,6 @@ if test -e 'school.txt' ; then
 			if test -f 'school.txt' ; then
 				echo 'school is a regular file'
 			fi
-elif ! test -e 'school.txt' ; then
+else
 	echo 'school file does not exist'
 fi
