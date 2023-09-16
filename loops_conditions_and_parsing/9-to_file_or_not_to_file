@@ -11,8 +11,7 @@ for $FILE in; do
 			fi
 	elif '$FILE' -eq 0; then
 		echo 'school is a regular file'
-			if '$FILE' -eq 1; then
-				break
-			fi
+	else '$FILE' -eq 1; then
+		break
 	fi
 done
