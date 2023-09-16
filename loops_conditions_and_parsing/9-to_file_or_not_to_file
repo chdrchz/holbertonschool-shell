@@ -1,17 +1,10 @@
 #!/usr/bin/env bash
 #if statement for listing file information
-FILE=school
-for $FILE in; do
-	if test -f '$FILE'; then
-		'echo school file exists'
-			if -z '$FILE'; then
-				echo 'school file is empty'
-			elif ! -z '$FILE'; then
-				echo 'school file is not empty'
-			fi
-	elif '$FILE' -eq 0; then
-		echo 'school is a regular file'
-	else '$FILE' -eq 1; then
-		break
-	fi
-done
+if [ -f 'school.txt' ]; then
+	echo 'school file exists'
+	echo 'school is a regular file'
+elif [ -z 'school.txt' ]; then
+	echo 'school file is empty'
+else 
+	echo 'school file is not empty'
+fi
