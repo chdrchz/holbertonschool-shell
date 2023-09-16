@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 #for loop to locate directories in list format, excluding the beginning of the directory name
 for x in *; do
-	cut -d "-"	
-	if [ -f "$x" ]; then
-                echo "$x"
-	fi
+	echo $x | cut -d "-" -f2
 done
