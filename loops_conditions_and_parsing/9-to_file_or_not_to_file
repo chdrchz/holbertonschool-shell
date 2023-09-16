@@ -9,6 +9,4 @@ if test -e 'school.txt' ; then
 		fi
 elif ! test -e 'school.txt' ; then
 	echo 'school file does not exist'
-else
-	break
 fi
