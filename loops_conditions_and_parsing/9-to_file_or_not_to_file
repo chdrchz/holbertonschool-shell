@@ -2,9 +2,4 @@
 #if statement for listing file information
 if [ -f 'school.txt' ]; then
 	echo 'school file exists'
-	echo 'school is a regular file'
-elif [ -z 'school.txt' ]; then
-	echo 'school file is empty'
-else 
-	echo 'school file is not empty'
 fi
