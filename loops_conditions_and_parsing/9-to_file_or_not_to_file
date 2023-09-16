@@ -2,4 +2,6 @@
 #if statement for listing file information
 if [ -f 'school.txt' ]; then
 	echo 'school file exists'
+elif
+else
 fi
