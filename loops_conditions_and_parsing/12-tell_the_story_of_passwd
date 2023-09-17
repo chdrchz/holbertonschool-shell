@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#telling the story of /etc/passwd uwing IFS and while loop
+while IFS= read -r line; do
+	echo "$line"
+done < '/etc/passwd'	
