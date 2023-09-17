@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
 #while loop to display content in a file
 while IFS= read -r line; do
-	username= $(echo "$line" | cut -f 1 -d ':')
-	password= $(echo "$line" | cut -f 2 -d ':')
-	userID= $(echo "$line" | cut -f 3 -d ':')
-	groupID= $(echo "$line" | cut -f 4 -d ':')
-	userINFO= $(echo "$line" | cut -f 5 -d ':')
-	home= $(echo "$line" | cut -f 6 -d ':')
-	command= $(echo "$line" | cut -f 7 -d ':')
+	username= $(echo "$line" | cut -d -f1 ":")
+	password= $(echo "$line" | cut -d -f2 ":")
+	userID= $(echo "$line" | cut -d -f3 ":") 
+	groupID= $(echo "$line" | cut -d -f4 ":")
+	userINFO= $(echo "$line" | cut -d -f5 ":") 
+	home= $(echo "$line" | cut -d -f6 ":") 
+	comman= $(echo "$line" | cut -d -f7 ":")
 
 	echo -n "The user $username is part of the $groupID gang, "
-	echo -n "lives in $home and rides $command."
+	echo -n "lives in $home and rides $comman."
 	echo -n "$userID's place is protected by the passcode $password, "
-	echo -n "more info about the user here: $userINFO"
+	echo "more info about the user here: $userINFO"
 done < "/etc/passwd"
 
