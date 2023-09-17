@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #if statement to loop through 1 - 100 and print fizz, buzz, and fizzbuzz on respective multiples of 3 + 5
 for x in {1..100}; do 
-	if [ $((x % 3)) -eq 0 && $((x % 5)) -eq 0 ]; then
+	if [ $((x % 3)) -eq 0 | -a $((x % 5)) -eq 0 ]; then
 		echo 'FizzBuzz'
 	elif [ $((x % 3)) -eq 0 ]; then
 		echo 'Fizz'
