@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #if statement for listing file information
-if test -e 'school.txt' ; then
+if test -f 'school.txt' ; then
 	echo 'school file exists'
 		if test -z 'school.txt' ; then
 			echo 'school file is empty'
@@ -12,6 +12,6 @@ if test -e 'school.txt' ; then
 		elif test -d 'school.txt' ; then				
 			:
 		fi
-elif ! test -e 'school.txt' ; then
+elif ! test -f 'school.txt' ; then
 	echo 'school file does not exist'	
 fi
