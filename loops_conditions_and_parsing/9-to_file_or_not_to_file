@@ -9,7 +9,7 @@ if test -e 'school.txt' ; then
 		fi
 			if test -f 'school.txt' ; then
 				echo 'school is a regular file'
-			else
+			elif test -d 'school.txt' ; then
 				:
 			fi
 elif ! test -e 'school.txt' ; then
