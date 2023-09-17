@@ -9,8 +9,6 @@ if test -e 'school.txt' ; then
 		fi
 		if [ -f 'school.txt' ]; then
 			echo 'school is a regular file'
-		elif [ -d 'school.txt' ]; then				
-			:
 		fi
 elif ! test -e 'school.txt' ; then
 	echo 'school file does not exist'	
